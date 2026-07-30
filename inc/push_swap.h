@@ -54,6 +54,7 @@ typedef struct s_push_swap
 {
 	t_stack			*a;
 	t_stack			*b;
+	double			disorder;
 	t_flags			flags;
 	t_benchmark		benchmark;
 }					t_push_swap;

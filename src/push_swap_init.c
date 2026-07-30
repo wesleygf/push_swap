@@ -113,6 +113,7 @@ t_push_swap	*init_push_swap(int *array, int size, int bench, char flag)
 		free_push_swap(ps);
 		return (NULL);
 	}
+	ps->disorder = compute_disorder(ps->a);
 	ps->flags.bench = bench;
 	ps->flags.flag = flag;
 	ps->benchmark = init_benchmark();

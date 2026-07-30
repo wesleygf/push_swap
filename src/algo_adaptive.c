@@ -14,12 +14,9 @@
 
 void	algo_adaptive(t_push_swap *ps)
 {
-	double	disorder;
-
-	disorder = compute_disorder(ps->a);
-	if (disorder < 0.2)
+	if (ps->disorder < 0.2)
 		algo_simple(ps);
-	else if (disorder < 0.5)
+	else if (ps->disorder < 0.5)
 		algo_medium(ps);
 	else
 		algo_complex(ps);

@@ -10,8 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../inc/push_swap.h"
 void error(void)
 {
     write(1, "Error\n", 6);
     exit(0);
+}
+void print_benchmark(t_benchmark bench)
+{
+    
 }
