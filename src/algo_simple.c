@@ -65,7 +65,7 @@ void	algo_simple(t_push_swap *stack)
 	i = 0;
 	while (i < size)
 	{
-		process_a(stack, find_smallest(stack->a, i));
+		process_a(stack, find_position(stack->a, i));
 		i++;
 	}
 	process_b(stack);
