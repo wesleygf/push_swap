@@ -76,4 +76,10 @@ void				free_stack(t_stack *stack);
 void				free_push_swap(t_push_swap *ps);
 int					ft_sqrt(int nb);
 int					is_sorted(t_stack *stack);
+int					ft_strcmp(char *s1, char *s2);
+int					is_number(char *str);
+int					is_duplicate(int *array, int size, int value);
+long				ft_atol(const char *nptr);
+void				error(void);
+
 #endif
