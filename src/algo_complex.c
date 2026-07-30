@@ -10,3 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../inc/push_swap.h"
+
+void	algo_complex(t_push_swap *ps)
+{
+	algo_medium(ps);
+}

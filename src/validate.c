@@ -25,9 +25,10 @@ int	is_duplicate(int *array, int size, int value)
 	}
 	return (0);
 }
+
 int	is_number(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (!str || !str[i])
@@ -36,7 +37,6 @@ int	is_number(char *str)
 		i++;
 	if (!str[i])
 		return (0);
-
 	while (str[i])
 	{
 		if (str[i] < '0' || str[i] > '9')

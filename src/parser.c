@@ -12,7 +12,7 @@
 
 #include "../inc/push_swap.h"
 
-void	convert_array(char **argv, int *array, int size)
+static void	convert_array(char **argv, int *array, int size)
 {
 	int		i;
 	long	converted;
@@ -41,7 +41,7 @@ void	convert_array(char **argv, int *array, int size)
 	}
 }
 
-t_flags	get_flags(char *str, t_flags flags)
+static t_flags	get_flags(char *str, t_flags flags)
 {
 	if (ft_strcmp(str, "--bench") == 0)
 		flags.bench = 1;
@@ -89,11 +89,11 @@ t_push_swap	*parse_argv(char **argv, int argc)
 		error();
 	convert_array(argv + i, array, argc - i);
 	ps = init_push_swap(array, argc - i, flags.bench, flags.flag);
-    if (!ps)
-    {
-        free(array);
-        error();
-    }
+	if (!ps)
+	{
+		free(array);
+		error();
+	}
 	free(array);
 	return (ps);
 }

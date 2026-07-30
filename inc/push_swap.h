@@ -70,17 +70,24 @@ void				rr(t_push_swap *stack);
 void				rra(t_push_swap *stack);
 void				rrb(t_push_swap *stack);
 void				rrr(t_push_swap *stack);
+void				algo_adaptive(t_push_swap *stack);
+void				algo_complex(t_push_swap *stack);
+void				algo_medium(t_push_swap *stack);
+void				algo_simple(t_push_swap *stack);
 double				compute_disorder(t_stack *stack);
 int					*index_array(int *stack, int size);
 t_push_swap			*init_push_swap(int *array, int size, int bench, char flag);
+t_push_swap			*parse_argv(char **argv, int argc);
 void				free_stack(t_stack *stack);
 void				free_push_swap(t_push_swap *ps);
 int					ft_sqrt(int nb);
 int					is_sorted(t_stack *stack);
 int					ft_strcmp(char *s1, char *s2);
+int					ft_strncmp(const char *s1, const char *s2, int n);
 int					is_number(char *str);
 int					is_duplicate(int *array, int size, int value);
 long				ft_atol(const char *nptr);
 void				error(void);
+void				print_benchmark(t_benchmark bench);
 
 #endif

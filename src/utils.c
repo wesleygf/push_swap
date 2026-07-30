@@ -37,6 +37,7 @@ int	ft_sqrt(int nb)
 		return (i);
 	return (i - 1);
 }
+
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
@@ -48,6 +49,7 @@ int	ft_strcmp(char *s1, char *s2)
 		i++;
 	return (s1[i] - s2[i]);
 }
+
 long	ft_atol(const char *nptr)
 {
 	int		i;
@@ -72,6 +74,7 @@ long	ft_atol(const char *nptr)
 	}
 	return (ret * signal);
 }
+
 int	ft_strncmp(const char *s1, const char *s2, int n)
 {
 	int	i;
