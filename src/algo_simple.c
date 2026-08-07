@@ -63,7 +63,7 @@ void	algo_simple(t_push_swap *stack)
 
 	size = stack->a->size;
 	i = 0;
-	while (i < size)
+	while (i < size && is_sorted(stack->a) == 0)
 	{
 		process_a(stack, find_position(stack->a, i));
 		i++;
